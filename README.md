@@ -8,6 +8,10 @@ This project implements exact alignment (no heuristics) between reads and refere
 
 This tool computes the optimal alignment score between a sequence and a genomic variation graph, represented in CSR format. It guarantees exact results by filling the full dynamic programming matrix. The implementation is optimized for NVIDIA GPUs and scales well across both short and long reads.
 
+## WIP 🚧
+Further optimization work is currently ongoing in the **main branch** of the [repository](https://github.com/leonardotisato/ALIGNER-INTRA-GPU). Even though the project implements two-level parallelism—both inter-sequence and intra-sequence—and, to the best of our knowledge, is the only sequence-to-graph aligner in the state of the art to combine this approach with exact (full DP) alignment accelerated on GPU, the performance results so far have not been as satisfactory as we initially expected.
+
+
 ---
 
 ## Build Instructions
